@@ -1,0 +1,192 @@
+body, html {
+    height: 100%;
+    width:100%;
+}
+body {
+  font-family: 'Fugaz One', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url(background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+}
+.container{
+
+  text-align: center;
+  color: #0000b3;
+  padding: 0;
+  font-family: 'Fugaz One', cursive;
+}
+.container span{
+  font-size: 140px;
+  color:#C256C2;
+  position:relative;
+  text-shadow: 8px 0 0 rgba(0,0,0,.2)
+}
+.container span:before{
+  content: attr(data-title);
+  position:absolute;
+  top:0;
+  left:0;
+  transform-origin:left;
+  color:#fff;
+  transition:.5s cubic-bezier(0,1.88,.83,.67);
+  transform:rotateY(25deg);
+  z-index:2;
+  opacity: 0.8;
+}
+.container span:after{
+  content: attr(data-title);
+  position:absolute;
+  top:0;
+  left:0;
+  transform-origin:left;
+  color:rgba(0,0,0,.1);
+  transition:.5s cubic-bezier(0,1.88,.83,.67);
+  transform:rotateY(5deg) scale(1.07 ,1) skewY(3deg);
+  z-index:1;
+  opacity: 0.5;
+}
+.container span:hover:before{
+transform:perspective(1000px) rotateY(-45deg);
+}
+.container span:hover:after{
+transform:rotateY(0deg) scale(1.11 ,1) skewY(6deg);
+}
+.tag{
+  font-size: 40px;
+  position: relative;
+  left:50%;
+  top: 80%;
+  margin-bottom: 60px;
+  transform: translate(-50%, -50%);
+}
+.tag span{
+  font-family: 'Patrick Hand', cursive;
+  color:#fff;
+  text-shadow:0 1px 0 #d8d8d8,
+              0 2px 0 #d8d8d8,
+              0 3px 0 #d8d8d8;
+}
+
+.contact{
+  position: relative;
+  left:50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+.contact ul{
+  list-style: none;
+}
+.contact ul li{
+  width: 100px;
+  height: 100px;
+  line-height: 130px;
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  float: left;
+  transition:all 0.5s ease;
+}
+.contact ul li .fa-envelope{
+  color: #fff;
+  transition:all 0.5s ease;
+}
+.contact ul li .fa-github{
+  color: #fff;
+  transition:all 0.5s ease;
+}
+.contact ul li .fa-linkedin{
+  color: #fff;
+  transition:all 0.5s ease;
+}
+.contact ul li .fa-mobile-alt{
+  color: #fff;
+  transition:all 0.5s ease;
+}
+.contact ul li .fa-compass{
+  color: #fff;
+  transition:all 0.5s ease;
+}
+.contact ul li .fa-download{
+  color: #fff;
+  transition:all 0.5s ease;
+}
+
+.contact ul li:hover:nth-child(1){
+  border:5px solid #3b5998;
+  box-shadow:0 0 15px #3b5998;
+  transition:all 0.5s ease;
+}
+.contact ul li:hover .fa-envelope{
+  color:#3b5998;
+  text-shadow:0 0 15px #3b5998;
+  transition:all 0.5s ease;
+}
+.contact ul li:hover:nth-child(2){
+  border:5px solid #00aced;
+  box-shadow:0 0 15px #00aced;
+  transition:all 0.5s ease;
+}
+.contact ul li:hover .fa-github{
+  color:#00aced;
+  text-shadow:0 0 15px #00aced;
+  transition:all 0.5s ease;
+}
+.contact ul li:hover:nth-child(3){
+  border:5px solid #bc2a8d;
+  box-shadow:0 0 15px #bc2a8d;
+  transition:all 0.5s ease;
+}
+.contact ul li:hover .fa-linkedin{
+  color:#bc2a8d;
+  text-shadow:0 0 15px #bc2a8d;
+  transition:all 0.5s ease;
+}
+.contact ul li:hover:nth-child(4){
+  border:5px solid #dd4b39;
+  box-shadow:0 0 15px #dd4b39;
+  transition:all 0.5s ease;
+}
+.contact ul li:hover .fa-mobile-alt{
+  color:#dd4b39;
+  text-shadow:0 0 15px #dd4b39;
+  transition:all 0.5s ease;
+}
+
+.contact ul li:hover:nth-child(5){
+  border:5px solid #ffff1a;
+  box-shadow:0 0 15px #ffff1a;
+  transition:all 0.5s ease;
+}
+.contact ul li:hover .fa-download{
+  color:#ffff1a;
+  text-shadow:0 0 15px #ffff1a;
+  transition:all 0.5s ease;
+}
+.num{
+  font-size: 40px;
+  width: 100%;
+}
+@media (max-width: 600px){
+  .container {
+    font-size: 3.5em;
+  }
+  .tag {
+    font-weight: 200;
+  }
+  .contact {
+    margin-left: 10px;
+    font-size: 1em;
+}
