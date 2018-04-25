@@ -179,6 +179,13 @@ transform:rotateY(0deg) scale(1.11 ,1) skewY(6deg);
   font-size: 40px;
   width: 100%;
 }
+#phoneNumber{
+  font-size:35px;
+  color:white;
+  float:right;
+  margin-right:50px;
+  display:none;
+}
 @media (max-width: 600px){
   .container {
     font-size: 3.5em;

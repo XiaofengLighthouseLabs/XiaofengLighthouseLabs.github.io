@@ -30,11 +30,23 @@
            <li><a href='mailto:gaga0110@163.com'  title='email'><i class="far fa-envelope fa-4x" aria-hidden="true"></i></a></li>
            <li><a href='https://github.com/XiaofengLighthouseLabs' target="_blank" title='github'><i class="fab fa-github fa-4x" aria-hidden="true"></i></a></li>
            <li><a href='https://www.linkedin.com/in/zhang-xxiaofeng-01130328/' target="_blank" title='linkedin'><i class="fab fa-linkedin fa-4x" aria-hidden="true"></i></a></li>
-           <li title='mobile: 647-869-1889'><i class="fas fa-mobile-alt fa-4x" aria-hidden="true" title='mobile'></i></li>
+           <li title='mobile: 647-869-1889' onclick='showNumber()'><i class="fas fa-mobile-alt fa-4x" aria-hidden="true" title='mobile'></i></li>
 
            <li><a href='https://resume.creddle.io/resume/araexdpp43v' target="_blank" title='resume'><i class="fas fa-download fa-4x" aria-hidden="true"></i></a></li>
           </ul>
         </div>
+        <div id='phoneNumber'>647-869-1889</div>
       </div>
+      <script type='text/javascript'>
+        function showNumber(){
+          let showNumber = document.getElementById('phoneNumber');
+          console.log(showNumber)
+            if(showNumber.style.display === 'none'){
+            showNumber.style.display = 'block';
+          } else {
+          showNumber.style.display = 'none'
+          }
+        }
+      </script>
 </body>
 </html>
